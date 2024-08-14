@@ -23,7 +23,7 @@ time_end = datetime.now()
 time_res = time_end - time_start
 print('Работа функций', time_res)
 
-time_end_ = datetime.now()
+time_start_ = datetime.now()
 
 thread_1 = Thread(target=wite_words, args=(10, 'example5.txt'))
 thread_2 = Thread(target=wite_words, args=(30, 'example6.txt'))
@@ -40,7 +40,7 @@ thread_2.join()
 thread_3.join()
 thread_4.join()
 
-time_start_ = datetime.now()
+time_end_ = datetime.now()
 
 time_res_ = time_end_ - time_start_
 
